@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-primary{
+    background-color: #249B3E;
+}
+
+.txt-primary{
+    color: #249B3E
+}
+
+.slider-btns > .btn-left, .btn-right{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F9FB;
+    border: 8px solid white;
+}
+
+.slider-btns .btn-left{
+    margin-left: -40px;
+}
+
+.slider-btns .btn-right{
+    margin-right: -40px;
+}

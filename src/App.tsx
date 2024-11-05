@@ -1,15 +1,15 @@
-import { ThemeProvider } from './context/ThemeContext';
-import { ThemeToggle } from './components/ThemeToggle';
+import '@/assets/styles/main.css';
 
-function App() {
+import { ThemeProvider } from './context/ThemeContext';
+import { ReactNode } from 'react';
+interface AppProps {
+  children: ReactNode;
+}
+
+function App({ children }: AppProps) {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-        <header className="p-4">
-          <ThemeToggle />
-        </header>
-        {/* Your other app content */}
-      </div>
+      {children}
     </ThemeProvider>
   );
 }
